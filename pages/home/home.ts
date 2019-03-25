@@ -1,5 +1,8 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { Router } from '@angular/router';
+import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { ContactPage } from '../contact/contact';
+
 
 
 @Component({
@@ -13,7 +16,8 @@ export class HomePage {
   }
 
 findMovie(){
-   this.router.navigateByUrl(``);
-  console.log('/contact');
+   /*this.router.navigateByUrl(``);
+  console.log('/contact');*/
+ this.navCtrl.push(ContactPage);
 }
 }
